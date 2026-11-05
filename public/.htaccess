@@ -5,3 +5,11 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [L]
+
+# Keep large media and versioned static assets cacheable on Hostinger.
+AddType video/mp4 .mp4
+<IfModule mod_headers.c>
+  <FilesMatch "\.(mp4|webp|png|jpe?g|svg|woff2?)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>

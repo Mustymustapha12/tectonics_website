@@ -22,3 +22,7 @@ A Node.js plan is unnecessary for this static build. Use a Hostinger Node.js app
 ## Routing and assets
 
 `BrowserRouter` uses root-relative routes and Vite’s default `/` base. Deploy at the domain root. If a subdirectory deployment is required, configure Vite’s `base` and Router basename to match it before building. All assets currently used by the replica are served from the local `public/` directory and included in `dist/`; no runtime request to the reference host is required.
+
+## Phase 2 deployment status
+
+The source repository has no GitHub Actions or Hostinger deployment workflow. The documented static deployment method remains the appropriate Vite architecture, but do not upload to an AI Builder site entry. At the time of Phase 2 review, the open Hostinger account's Tectonics-named entry is listed as an AI Builder site at `tectonics-group-branding-site-370728.hostingersite.com`, while the previously inspected production tab used `blanchedalmond-trout-854799.hostingersite.com`. These do not identify the same target, and the Hostinger entry is not a confirmed static PHP/HTML document root for this repository. No upload was performed to avoid replacing a different deployment. Confirm the intended domain and static document root before manually publishing the contents of `dist/`.
