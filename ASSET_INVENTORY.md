@@ -45,3 +45,9 @@ The reference images used by the implementation have been copied into `public/` 
 ## Phase 2 asset recovery notes
 
 The original TerraBridge MP4 and seven missing gallery images were retrieved from the reference site. A few reference entries use suitable local portfolio/laboratory photos because their own per-project photography was not exposed in the source page. The original video is large (about 32 MB); both video elements use `preload="none"` and the hero is muted/inline for browser autoplay compatibility.
+
+## Additional user-supplied source assets
+
+- `Tectonics_Integrated_Technology_Catalogue.pdf` (255 pages, approximately 63 MB) was reviewed as content and portfolio reference. Its section map covers oil-and-gas simulation, process training, advanced manufacturing, petroleum/reservoir/geoscience, mining, exploration, downstream petroleum, analytical instruments, applied science, laboratory infrastructure, materials/geotechnical testing and biomedical systems. The PDF is not bundled into the site because of its size; no catalogue page images were extracted for production.
+- The three supplied Word documents were content sources and contain no additional image assets that were added to the website. Existing local site imagery is reused for the newly added group, division and catalogue sections.
+- The catalogue’s illustrative supplier/product imagery was not copied as individual assets. Product availability remains subject to project specification and supplier coordination as described in the supplied content.
